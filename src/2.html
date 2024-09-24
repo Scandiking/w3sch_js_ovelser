@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <h1>Lovund</h1>
+        <h1>Rødøy</h1>
+        <script>
+            document.getElementById("demo").innerHTML = "<ul><li>1</li><li>2</li><li>3</li></ul>";
+            const h1tags = document.getElementsByTagName("h1");
+
+            // Might return multiple elements
+            h1tags[0].innerHTML = "Hello World";
+            h1tags[1].innerHTML = "Hallaisen";
+
+            document.head.innerHTML = "<title>Nettsidetittel</title>";
+
+            // Can find HTML elements using id, tagname and classname
+
+        </script>
+    </body>
+</html>
