@@ -1,0 +1,33 @@
+<!-- in JavaScript we input the script into the <script> tag within the HTML file
+// Alternatively standalone as .jsx -->
+
+<!-- Deklarere dokumenttype for HTML5 -->
+<!DOCTYPE html>
+
+<!-- Spesifisere at siden er på norsk bokmål-->
+<html lang="nb">
+
+<head>
+    <!-- For å vise æ, ø og å riktig: -->
+    <meta charset="UTF-8">
+    <title>
+        Tittelen Min
+    </title>
+</head>
+
+<body>
+
+<h1>Tekst for å vise at siden har lastet</h1>
+
+<!-- Plassere JavaScriptelementet på siden -->
+<p id="identifikatornavn"></p>
+
+<!-- Her kommer selve Javascripten -->
+<script>
+    document.getElementById("identifikatornavn").innerHTML = "Min første JavaScript";
+</script>
+
+
+
+</body>
+</html>
