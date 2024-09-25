@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        JavaScript Statements
+    </title>
+
+</head>
+
+    <body>
+
+        <!-- Statements -->
+
+        <h1>JavaScript Statements</h1>
+        <p>I HTML-dokumenter kjøres JavaScript statements av nettleseren din.</p>
+
+        <p id="identifikatornavn"></p>
+
+        <script>document.getElementById("identifikatornavn").innerHTML = "Hei, sveis.";</script>
+
+        <p>JavaScript statements består av verdier, operatorer, uttrykk, nøkkelord og kommentarer. Eller på engelsk:
+            values, operators, expressions, keywords og comments.</p>
+        <p>Statementet "document.getElementById("identifikatornavn").innerHTML = "Hei, sveis" forteller nettleseren din
+            at den skal skrive "Hei, Sveis" inni et element med en identitet vi har gitt elementet. I dette tilfellet
+            "identifikatornavn".</p>
+
+        <!-- Semikolon-->
+
+        <h1>Semikolon: «;»</h1>
+
+        <div>
+            <code>
+                let a, b, c;
+            </code>
+        </div>
+
+        <div>
+            <code>
+                a = 5;
+            </code>
+        </div>
+
+        <div>
+            <code>
+                b = 6;
+            </code>
+        </div>
+
+        <div>
+            <code>
+            c = a + b;
+            </code>
+        </div>
+
+        <p>Semikolon skiller JavaScript statements fra hverandre. Vi legger til et semikolon på slutten av hvert
+            kjørbare statement.</p>
+    <p>Det første statementet deklarerer tre variabler. På første linje har de ikke fått tilordnet noen verdi</p>
+    <p>a = 5; tilordner verdien 5 til variabelen a. Samme med b = 6;. Variabelen c blir tilordnet summen av verdien av
+        variabel a og variabel b.</p>
+
+    <!-- White Space -->
+
+    <h1>JavaScript White Space</h1>
+    <p>JavaScript ignorerer flere mellomrom. Du kan legge til hvitt rom for å gjøre scriptet ditt mer lesbart.
+        For eksempel er følgende linjer like hva JavaScript angår:</p>
+
+        <div>
+            <code>
+                let person = "Hege";
+            </code>
+        </div>
+        <div>
+            <code>
+                let person="Hege";
+            </code>
+        </div>
+    <p>Derfor er det ansett som god praksis å bruke mellomrom rundt operatorer. Det er mer behagelig å lese
+        ( (2**2 + 3) / ( 4**3) ) fremfor ((2**2+3)/(4**3)).</p>
+    <h1>JavaScript linjelengde og linjebrytninger</h1>
+    <h2>JavaScript Line Length and Line Breaks</h2>
+    <p>Angående lesbarhet så tenderer programmerere til å holde kodelinjene sine innenfor 80-tegn-grensen.
+        Om et JavaScript statement ikke passer på en linje så er det best å bryte linjen etter statementets
+        operatortegn.</p>
+    <div><code>document.getElementById("demo").innerHTML =<br>
+    "Hei, sveis!";</code></div>
+
+    <h1>JavaScript kodeblokker</h1>
+    <h2>JavaScript Code Blocks</h2>
+    <p>Eksempel</p>
+    <div>
+        <code>
+            function myFunction() {<br>
+                document.getElementById("demo1").innerHTML = "Hei, sveis!";<br>
+                document.getElementById("demo2").innerHTML = "Hei, frisyre!";<br>
+            }
+        </code>
+    </div>
+
+    <!--Keywords-->
+
+    <h1>JavaScript nøkkelord (keywords)</h1>
+    <p>JavaScript statements starter ofte med et nøkkelord for å identifisere JavaScript-handlingen som skal utføres.</p>
+    <ul>
+        <li>
+            var
+            <ul>
+                <li>Deklarerer en variabel</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            let
+            <ul>
+                <li>Deklarerer en blokkvariabel</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            const
+            <ul>
+                Deklarerer en blokk-konstant
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            if
+            <ul>
+                Markerer en block med statements som kjøres avhengig av tilstand
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            switch
+            <ul>
+                Markerer en blokk med statements som kjøres i forskjellige sammenhenger (cases)
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            for
+            <ul>
+                Markerer en blokk med statements som kjøres i løkke (loop)
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            function
+            <ul>
+                Deklarerer en funksjon
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            return
+            <ul>
+                Går ut av en funksjon
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            try
+            <ul>
+                Implementerer feilbehandling for en blokk med statements
+            </ul>
+        </li>
+    </ul>
+
+    </body>
+</html>
