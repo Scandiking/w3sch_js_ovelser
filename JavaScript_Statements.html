@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
+    <!-- Velger UTF-8-tegnsett for å vise æ, ø og å riktig -->
     <meta charset="UTF-8">
+
+    <!--Gir tittel som vises på fanen-->
     <title>
         JavaScript Statements
     </title>
@@ -11,12 +14,16 @@
     <body>
 
         <!-- Statements -->
-
+        <!-- h1 tagen deklarerer header, overskrift -->
         <h1>JavaScript Statements</h1>
+
+        <!--p er for paragraph og for tekstavsnitt-->
         <p>I HTML-dokumenter kjøres JavaScript statements av nettleseren din.</p>
 
+        <!-- Gir ID til p-element -->
         <p id="identifikatornavn"></p>
 
+        <!-- Kaller på elementet vi ga ID til -->
         <script>document.getElementById("identifikatornavn").innerHTML = "Hei, sveis.";</script>
 
         <p>JavaScript statements består av verdier, operatorer, uttrykk, nøkkelord og kommentarer. Eller på engelsk:
@@ -26,7 +33,7 @@
             "identifikatornavn".</p>
 
         <!-- Semikolon-->
-
+        <!--Viser betydningen av semikolon i JavaScript for å avslutte statements-->
         <h1>Semikolon: «;»</h1>
 
         <div>
@@ -89,6 +96,8 @@
     <h2>JavaScript Code Blocks</h2>
     <p>Eksempel</p>
     <div>
+
+        <!--«Hei, frisyre!» vises ikke på siden fordi elementet har fått kallenavn (demo2) men har ikke blitt kallet på-->
         <code>
             function myFunction() {<br>
                 document.getElementById("demo1").innerHTML = "Hei, sveis!";<br>
@@ -101,6 +110,8 @@
 
     <h1>JavaScript nøkkelord (keywords)</h1>
     <p>JavaScript statements starter ofte med et nøkkelord for å identifisere JavaScript-handlingen som skal utføres.</p>
+
+    <!--Lager uorndet liste med nøstede elementer som fungerer som beskrivelse for nøkkelord-item'et i rot-uordnet-listen.-->
     <ul>
         <li>
             var
@@ -181,6 +192,87 @@
             </ul>
         </li>
     </ul>
+
+    <h1>JavaScript Syntakst</h1>
+    <h2>JavaScript Syntax</h2>
+    <div><code>//How to create variables<br>
+    var x;<br>
+    let y;<br><br>
+    //How to use variables<br>
+    x = 5;<br>
+    y = 6;<br>
+    let z = x + y;</code></div>
+    <p>JavaScript syntakst definerer to typer verdier. Det er faste verdier (fixed values) og variabler (variable
+        values). Faste verdier kalles <em>literals</em> og variable verdier kalles <em>variables</em>.</p>
+    <h3>JavaScript Literals</h3>
+    <p>De to viktigste syntakstreglene for faste verdier er:</p>
+    <ul><li><b>Tall</b> skrives med eller uten desimaler.</li>
+        <li><b>Tekststrenger (strings)</b> skrives inni enkelte eller doble anførselstegn som «'» og «"».</ul>
+
+    <h3>JavaScript Operators</h3>
+        <p>JavaScript bruker operatorene til de fire regneartene for å beregne verdier.</p>
+        <div>
+            <code>
+                console.log(5+10) // gir «15» i konsollen.<br>
+                a = 5;<br>
+                b = 10;<br>
+                c = a + b;<br>
+                console.log(c) // gir også «15» i konsollen.
+            </code>
+        </div>
+        <p>JavaScript bruker tilordningsoperatoren «=» for å tilordne verdier til variabler.</p>
+        <div>
+            <code>
+                let x, y;<br>
+                x = 5;<br>
+                y = 6;
+            </code>
+        </div>
+
+    <h3>JavaScript Expressions</h3>
+        <p>Et uttrykk er en kombinasjon av verdier, variables og operatorer som beregner en verdi. Beregningen
+            kalles en evaluasjon. For eksempel, 5 * 10 evaluerer til 50. Uttrykk kan også inneholde variabelverdier
+            som x * 10.</p>
+        <p>Verdiene kan også være forskjellige datatyper, sånn som tall og tekststrenger. For eksempel blir
+            "John" + " " + "Doe" evaluert til "John Doe".</p>
+
+
+    <h3>JavaScript Keywords</h3>
+        <p>Nøkkelord, eller <em>keywords</em> brukes for å sjekke etter handlinger som skal utføres.
+            <cite>let</cite>-nøkkelordet brukes for å fortelle nettleseren at den skal lage variabler. Det kan
+            hende at du ser "var" i gammel kode. Ikke bruk "var" i din egen kode, men dersom du ser "var" i andres
+            ferdigskrevne kode, la det være som det er. var er utdatert.</p>
+
+
+    <h3>JavaScript Comments</h3>
+        <p>Det er ikke alle JS-statements som eksekveres (kjøres). Kode etter doble skråstreker eller skråtrek
+            stjerne og stjerne skråstrek blir forstått som en kommentar. Kommentarer ignoreres av nettleseren og kommer
+            ikke til å bli eksekvert. Kommentarer er til for utviklere og mennesker.</p>
+
+
+    <h3>JavaScript Identifiers/Names</h3>
+        <p>Identifikatorer er JavaScript-navn. Identifikatorer brukes for å navngi variabler, nøkkelord og funksjoner.
+            Reglene for lovlige navn er de samme som i de fleste programmeringsspråk.
+            Et JavaScript-navn må begynne med:</p>
+        <ul>
+            <li>En bokstav (A-Z eller a-z, ingen æ, ø, å)</li>
+            <li>Et dollartegn $</li>
+            <li>En understrek _</li>
+        </ul>
+        <p>Påfølgende tegn etter disse kan være bokstaver, sifre, understreker eller dollartegn. Merk at tall ikke tillates som første tegn i navn. På denne måten kan JavaScript lett skille identifikatorer (<em>identifiers</em>) fra tall.</p>
+
+
+    <h3>JavaScript is Case Sensitive</h3>
+        <p>To be continued...</p>
+
+
+    <h3>JavaScript and Camel Case</h3>
+        <p>To be continued...</p>
+
+
+    <h3>JavaScript Character Set</h3>
+        <p>To be continued...</p>
+
 
     </body>
 </html>
