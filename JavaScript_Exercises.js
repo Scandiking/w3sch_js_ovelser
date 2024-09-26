@@ -155,21 +155,89 @@ alert(str1 + str2);
 // JS String Methods
 // ---------------------------------------------
 
+// Convert the text into an UPPERCASE text:
+let txt = "Hello World!";
+txt = txt.toUpperCase();
+
+// use the slice method to return the word "bananas".
+let txt = "I can eat bananas all day";
+let x = txt.slice(10,17);
+
+// Use the correct String method to replace the word "Hello" with the word "Welcome"
+let txt = "Hello World";
+txt = txt.replace("Hello", "Welcome");
+
+// Convert the value of txt to upper case
+let txt = "Hello World";
+txt = txt.toUpperCase();
+
+// Convert the value of txt to lower case.
+let txt = "Hello World";
+txt = txt.toLowerCase();
+
+
 // ---------------------------------------------
 // JS Arrays
 // ---------------------------------------------
+
+// Get the value "Volvo" from the cars array
+const cars = ["Saab", "Volvo", "BMW"];
+let x = cars[1];
+
+// Change the first item of cars to "Ford"
+const cars = ["Volvo", "Jeep", "Mercedes"];
+cars[0] = "Ford";
+
+// Alert the number of items in an array, using the correct Array property
+const cars = ["Volvo", "Jeep", "Mercedes"];
+alert(cars.length);
 
 // ---------------------------------------------
 // JS Array Methods
 // ---------------------------------------------
 
+// Use the correct Array method to remove the last item of the fruits array.
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.pop();
+
+// Use the correct Array method to add "Kiwi" to the fruits array
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Kiwi");
+
+// Use the splice() method to remove "Orange" and "Apple" from fruits.
+const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+fruits.splice(1,2);
+
+
 // ---------------------------------------------
 // JS Array Sort
 // ---------------------------------------------
 
+// Use the correct Array method to sort the fruits array alphabetically
+const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+fruits.sort()
+
+
 // ---------------------------------------------
 // JS Dates
 // ---------------------------------------------
+
+// Create a Date object and alert the current date and time.
+const d = new Date();
+alert(d);
+
+// Use the correct Date method to extract the year (four digits) out of a date object.
+const d = new Date();
+year = d.getFullYear();
+
+// Use the correct Date method to get the month (0-11) out of a date object.
+const d = new Date();
+month = d.getMonth();
+
+// Use the correct Date method to set the yeear of a date object to 2020
+const d = new Date();
+d.setFullYear(2020)
+
 
 // ---------------------------------------------
 // JS Math
