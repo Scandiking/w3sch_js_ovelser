@@ -243,30 +243,201 @@ d.setFullYear(2020)
 // JS Math
 // ---------------------------------------------
 
+// Use the correct math method to create a random number
+let r = Math.random();
+
+// Use the correct Math method to return the largest number of 10 and 20
+let x = Math.max(10, 20);
+
+// Use the correct Math method to round a number to the nearest integer:
+let x = Math.round(5.3);
+
+// Use the correct Math method to get the square root of 9
+let x = Math.sqrt(9);
+
 // ---------------------------------------------
 // JS Comparisons
 // ---------------------------------------------
+
+// Choose the correct comparison operator to alert true, when x is greater than y
+x = 10;
+y = 5;
+alert(x>y);
+
+// Choose the correct comparison operator to alert true when x is equal to y
+x = 10;
+y = 10;
+alert(x==y);
+
+// Choose the correct comparison operator to alert true, when x is NOT equal to Y
+x = 10;
+y = 5;
+alert(x!=y);
+
+// Choose the correct conditional (ternary) operator to alert "Too young" if age is less than 18, otherwise alert "Old enough".
+var age = n;
+var voteable = (age < 18) ? "Too young" : "Old enough";
+alert(voteable);
 
 // ---------------------------------------------
 // JS Conditions
 // ---------------------------------------------
 
+// Fix the if statement to alert "Hello World" if x is greater than y
+if ( x > y ) {
+    alert("Hello World");
+}
+
+// Fix the if statement to alert "Hello World" if x is greater than y, otherwise alert "Goodbye"
+if (x > y) {
+    alert("Hello World");
+} else {
+    alert("Goodbye");
+}
+
+
 // ---------------------------------------------
 // JS Switch
 // ---------------------------------------------
+
+// Create a switch statement that will alert "Hello" if fruits is "bananana", and "Welcome" if fruits is "apple"
+switch(fruits) {
+    case "Banana":
+        alert("Hello")
+        break;
+    case "Apple":
+        alert("Welcome")
+        break;
+}
+
+// Add a section that will alert("Neither") if fruits is neither "banana" nor "apple".
+switch (fruits) {
+    case "Banana":
+        alert("Hello")
+        break;
+    case "Apple":
+        alert("Welcome")
+        break;
+    default:
+        alert("Neither");
+}
 
 // ---------------------------------------------
 // JS For Loops
 // ---------------------------------------------
 
+// Create a loop that runs from 0 to 9:
+let i;
+for (i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// Create a loop that runs trough each item in the fruits array.
+const fruits = ["Apple", "Banana", "Orange"];
+for (x of fruits) {
+    console.log(x);
+}
+
+
 // ---------------------------------------------
 // JS While Loops
 // ---------------------------------------------
+
+// Create a loop that runs as long as i is less than 10
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++
+}
+
+// Create a loop that runs as long as i is less than 10, but increase i with 2 each time
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i = i + 2;
+}
 
 // ---------------------------------------------
 // JS Break Loops
 // ---------------------------------------------
 
+// Make the loop stop when i is 5
+for (i = 0; i < 10; i++) {
+    console.log(i);
+    if (i == 5) {
+        break;
+    }
+}
+
+// Make the loop jump to the next iteration when is 5
+for (i = 0; i < 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+    console.log(i);
+}
 // ---------------------------------------------
 // JS HTML DOM
 // ---------------------------------------------
+
+// Use the getElementById method to find the <p> element, and change its text to "Hello".
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = "Hello";
+</script>
+
+// Use the getElemtsByTagName method to find the first <p> element, and change its text to "Hello"
+<p id="demo"></p>
+<script>
+    document.getElementsByTagName("p")[0].innerHTML = "Hello";
+</script>
+
+// Change the text of the frist element that has the class name "test".
+<p class="test"></p>
+<p class="test"></p>
+
+<script>
+    document.getElementByClassName("test")[0].innerHTML = "Hello";
+</script>
+
+// Use HTML DOM to change the value of the image's scr attribute.
+<img id ="image" src="smiley.gif"/>
+
+<script>
+    document.getElementById("image").src = "pic_mountain.jpg";
+</script>
+
+// Use HTML DOM to change the value of the input field
+<input type="text" id="myText" value="Hello"></input>
+<script>
+    document.getElementById("myText").value = "Have a nice day!";
+</script>
+
+// Change the text color of the <p> element to "red".
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").style.color = "red";
+</script>
+
+// Change the font size of the p element ot 40 pixels
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").style.fontSize="40px";
+</script>
+
+// Use the CSS display property to hide the p element
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").style.display="none";
+</script>
+
+// Use the event listener to assign an onclick event to the <button> element
+<button id="demo">Click me1</button>
+
+<script>
+    document.getElementById("demo").addEventListener("click", myFunction);
+</script>
+
+
+
