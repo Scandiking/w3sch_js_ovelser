@@ -6,10 +6,13 @@
 // 4. const
 
 // Automatisk:
+/*
 x = 5;
 y = 6;
 z = x + y;
 console.log(z);
+*/
+
 
 // Det er ansett som god praksisk å alltid deklarere variabler før bruk.
 var x1 = 5;
@@ -54,9 +57,67 @@ let x = 5;
 let y = 6;
 // Akkurat som i algebra så brukes variabler i uttrykk
 let z = x + y;
+console.log(z);
 
 // JavaScript-identifikatorer
 /*
-Alle JS-variabler må identifiseres via unike navn. Disse unike navnene kalles identifikatorer (eller identifiers). Identifiers kan være korte navn (som x og y) eller mer beskrive navn (som alder, sum eller totaltVolum).
+Alle JS-variabler må identifiseres via unike navn. Disse unike navnene kalles identifikatorer (eller identifiers).
+Identifiers kan være korte navn (som x og y) eller mer beskrive navn (som alder, sum eller totaltVolum). Følgende
+ville for eksempel vært naturlige identifiers for å regne ut volum av en eske:
 */
+
+// Angir verdien på lengden på boksen
+let box_length = 30;
+
+// Angir verdien på bredden på boksen
+let box_width = 15;
+
+// Angir verdien på høyden på boksen
+let box_height = 10;
+
+// Mellomrom i regnestykket for god lesbarhet for mennesker:
+// Boksens volum = boksens lengde * boksens bredde * boksens høyde
+let box_volume = (box_length * box_width * box_height);
+console.log("Boksen er",box_volume,"cm^2");
+
+// Tilordningsoperator
+/*
+I JS er likhetstegnet (=) en tilordningsoperator, ikke en "er lik"-operator. Det er forskjellig fra algebra.
+x = x + 5 gir ikke mening i algebra. I javascript derimot betyr det at verdien av x tilordnes x + 5. Altså,
+om x = 10 og x = x + 5 blir den nye verdien av x 15.*/
+// Initiell verdi av 10 tilordnes variabelen x:
+x = 10;
+console.log("Nå er x:",x);
+// Nå tilordnes x verdien av x (10) + 5;
+// 1. x = 10;
+// 2. x = 10 + 5
+x = x + 5;
+console.log("Nå er x:",x);
+// 3. x = 15;
+// 4. x = x + 5
+// 5. x = 15 + 5
+x = x + 5;
+console.log("Nå er x:",x);
+// 6. x = 20
+
+// Apropos algebra kan du også gjøre aritmetikk med JS-variabler ved å bruke operatorer som = og +.
+let abc = 5 + 2 + 3;
+console.log("5 + 2 + 3 =",abc);
+
+// Du kan også bruke tekststrenger, men de vil bli konkatenert
+let tallOgNavn = "John" + " " + "Doe";
+// logger John pluss mellomrom pluss Doe
+console.log(tallOgNavn);
+
+let tallOgNavn2 = "Jon" + 2;
+// logger Jon + integer datatype 2
+console.log(tallOgNavn2);
+
+let tallOgNavn3 = "2" + 2;
+// logger tekststring datatype 2 og konkatenerer integer datatype 2
+console.log(tallOgNavn3)
+
+let tallOgNavn4 = 2 + 2;
+// logger summen av integer datatype 2 og integer datatype 2
+console.log(tallOgNavn4);
 
